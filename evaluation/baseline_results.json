@@ -1,0 +1,88 @@
+[
+  {
+    "timestamp": "2026-11-24T01:54:31.435331",
+    "total_records": 11,
+    "human_decision": "REJECTED",
+    "naive_baseline": {
+      "model": "gemini-3.6-flash",
+      "passed": 0,
+      "parity_pct": 0.0,
+      "latency_s": 24.05,
+      "tokens": 3884,
+      "failures": [
+        "Traceback (most recent call last):\n  File \"C:\\Users\\rohan\\codebridge\\evaluation\\naive_modern.py\", line 36, in <module>\n    main()\n  File \"C:\\Users\\rohan\\codebridge\\evaluation\\naive_modern.py\", line 17, in main\n    days_late = int(days_s)\n                ^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: '15X'"
+      ]
+    },
+    "verified_pipeline": {
+      "final_passed": 11,
+      "parity_pct": 100.0,
+      "total_latency_s": 39.94,
+      "total_tokens": 9392,
+      "attempts": [
+        {
+          "attempt": 1,
+          "model": "gemini-3.6-flash",
+          "passed": 0,
+          "total": 11,
+          "failures": [
+            "Traceback (most recent call last):\n  File \"C:\\Users\\rohan\\codebridge\\evaluation\\.candidate_tmp.py\", line 34, in <module>\n    main()\n  File \"C:\\Users\\rohan\\codebridge\\evaluation\\.candidate_tmp.py\", line 18, in main\n    days_late = int(days_s)\n                ^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: '15X'"
+          ],
+          "latency_s": 20.53,
+          "tokens": 4491
+        },
+        {
+          "attempt": 2,
+          "model": "gemini-3.6-flash",
+          "passed": 11,
+          "total": 11,
+          "failures": [],
+          "latency_s": 19.41,
+          "tokens": 4901
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-11-24T01:59:47.880479",
+    "total_records": 11,
+    "human_decision": "APPROVED",
+    "naive_baseline": {
+      "model": "gemini-3.6-flash",
+      "passed": 0,
+      "parity_pct": 0.0,
+      "latency_s": 10.75,
+      "tokens": 3086,
+      "failures": [
+        "Traceback (most recent call last):\n  File \"C:\\Users\\rohan\\codebridge\\evaluation\\naive_modern.py\", line 30, in <module>\n    main()\n  File \"C:\\Users\\rohan\\codebridge\\evaluation\\naive_modern.py\", line 16, in main\n    days_late = int(days_s)\n                ^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: '15X'"
+      ]
+    },
+    "verified_pipeline": {
+      "final_passed": 11,
+      "parity_pct": 100.0,
+      "total_latency_s": 36.31,
+      "total_tokens": 10880,
+      "attempts": [
+        {
+          "attempt": 1,
+          "model": "gemini-3.6-flash",
+          "passed": 0,
+          "total": 11,
+          "failures": [
+            "Traceback (most recent call last):\n  File \"C:\\Users\\rohan\\codebridge\\evaluation\\.candidate_tmp.py\", line 30, in <module>\n    main()\n  File \"C:\\Users\\rohan\\codebridge\\evaluation\\.candidate_tmp.py\", line 16, in main\n    days_late = int(days_s)\n                ^^^^^^^^^^^\nValueError: invalid literal for int() with base 10: '15X'"
+          ],
+          "latency_s": 16.64,
+          "tokens": 5112
+        },
+        {
+          "attempt": 2,
+          "model": "gemini-3.6-flash",
+          "passed": 11,
+          "total": 11,
+          "failures": [],
+          "latency_s": 19.67,
+          "tokens": 5768
+        }
+      ]
+    }
+  }
+]
